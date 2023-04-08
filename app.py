@@ -18,6 +18,7 @@ class Todo(db.Model):
     complete = db.Column(db.Boolean)
 
 
+    
 @app.route("/")
 def home():
     todo_list = Todo.query.all()
